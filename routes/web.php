@@ -44,10 +44,11 @@ Route::get('test5','PrakerinController@percobaan6');
 Route::get('halaman/{id}','PrakerinController@param');
 Route::get('taupik/{a}','PrakerinController@parameter');
 Route::get('coba','CobaController@test');
-Route::get('coba2/{id}','CobaController@test2');
+Route::get('coba2/{nama}','CobaController@test2');
 Route::get('coba3','CobaController@index');
 Route::get('coba4','CobaController@test3');
 Route::get('coba5','CobaController@test4');
 Route::get('test/{id}','CobaController@binatang');
+Route::resource('post','PostController');
 
 

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Hello</title>
 </head>
 <body>
 
 
 @foreach($haha as $id )
-	{{$id}}
+	<li>{{$id}}</li>
 @endforeach
 
 

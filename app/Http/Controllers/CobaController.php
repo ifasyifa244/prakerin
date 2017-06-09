@@ -13,8 +13,8 @@ class CobaController extends Controller
     	return $a;
     }
 
-     public function test2($id){
-    	$b=Coba::find($id);
+     public function test2($nama){
+    	$b=Coba::where('nama','like',$nama)->orWhere ('jurusan','like',$nama)->get();
     	return $b;
     }
 
@@ -41,6 +41,8 @@ class CobaController extends Controller
     	
     	return view('binatang',compact('haha'));
     }
+
+
 
     
 
